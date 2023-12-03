@@ -9,11 +9,11 @@ Manage your custom list of services for systemd.
 After cloning this repository, give `initialize.sh` with execute permission and execute:\
 
 ```bash
-chmod +x ./initialize.sh
+chmod +x initialize.sh
 ```
 
 ```bash
-./initialize.sh
+bash initialize.sh
 ```
 
 Mention the services with the format mentioned below under  [list_of_services.txt](#list_of_services-file-structure).\
@@ -25,12 +25,16 @@ This is the file where the names of your services would go.
 
 ### structure
 
-<name_of_the_service>=enable\
-<name_of_the_service>=disable\
-<name_of_the_service>=stop\
-<name_of_the_service>=start\
+<name_of_the_service>=<command[start|stop|enable|disable]>\
+
+Examples:
+
+service0=enable\
+service1=disable\
+service2=start\
+service3=stop\
 ...
 
 ## How does it work?
 
-The file `list_of_services.txt` will be monitored by the `initialize.sh` constantly and will change the status of the services based on the status mentioned in the txt file.
+The file `list_of_services.txt` will be monitored by the `monitor.sh` constantly and will change the status of the services based on the status mentioned in the txt file.
