@@ -31,6 +31,6 @@ This is the file where the names of your services would go.
 <name_of_the_service>=start\
 ...
 
-## working
+## How does it work?
 
 The file `list_of_services.txt` will be monitored by the `initialize.sh` constantly and will change the status of the services based on the status mentioned in the txt file.
