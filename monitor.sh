@@ -1,7 +1,9 @@
-#!usr/bin/bash
+#!/usr/bin/env bash
 
+home_path='/home/sup3r'
 file_name="list_of_services.txt"
-file_location="$(realpath $HOME)/$file_name"
+
+file_location="$home_path/$file_name"
 
 while read -r line
 do
