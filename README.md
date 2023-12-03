@@ -9,11 +9,11 @@ Manage your custom list of services for systemd.
 After cloning this repository, give `initialize.sh` with execute permission and execute:\
 
 ```bash
-    chmod +x ./initialize.sh
+chmod +x ./initialize.sh
 ```
 
 ```bash
-    ./initialize.sh
+./initialize.sh
 ```
 
 Mention the services with the format mentioned below under  [list_of_services.txt](#list_of_services-file-structure).\
