@@ -37,4 +37,4 @@ service3=stop\
 
 ## How does it work?
 
-The file `list_of_services.txt` will be monitored by the `monitor.sh` constantly and will change the status of the services based on the status mentioned in the txt file.
+The file `list_of_services.txt` will be monitored by the `monitor.sh` constantly and will change the status of the services based on the status mentioned in the txt file of the respective services.
